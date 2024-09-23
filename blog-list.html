@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Bar</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+  <!-- BOOTSTRAP CSS LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- BOOTSTRAP JAVA LINK -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Navigation bar with links -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LAHB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+<div>
+  <!-- Hero section with background image and main title -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>ARTHOLIC</h1>
+      <p>I'm an art historian that loves negronis and contemporary art.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT ME SECTION -->
+<section class="about-me">
+  <div class="container">
+
+    <!-- IMAGES GALLERY -->
+    <div class="image">
+      <!-- First image in the gallery -->
+      <div class="image-item">
+        <img src="https://images.unsplash.com/photo-1632127257619-43e8568a1d45?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjY3Mzg5Mjl8&ixlib=rb-4.0.3&q=85" alt="Fontana">
+      </div>
+      <!-- Second image in the gallery -->
+      <div class="image-item">
+        <img src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjY3Mzg4NDF8&ixlib=rb-4.0.3&q=85" alt="Pintura">
+      </div>
+    </div>
+
+    <!-- ABOUT ME TEXT -->
+    <div class="about-me">
+      <h2>WHO I AM?</h2>
+      <p>Let me introduce myself, I'm Laura H. Bazán from Mexico. I am an art historian and independent art curator. I know... These days, everyone is a curator—or should I say data analyst? When I was a child, art filled my days with colors, shapes, and beauty. So, I decided to dedicate my life to it. Art, for me, is the greatest human creation. Like Charles Saatchi, I declare myself an Artholic too. But right now, I'm uncertain if I want to continue professionally in this field. This year, I moved to Italy for a fresh start, and I'm currently exploring tech skills while living abroad. I started this blog to learn to code and share my journey in this ancient city. I will write about Italian culture, museums, local tips, and more. I hope you enjoy reading my posts and exploring Rome with me.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MUSEUMS SECTION with toggle list -->
+<section id="Museums">
+  <a href="#" id="toggleList"><button type="button" class="btn btn-warning">Favs museums </button></a>
+  <ul id="museumList" style="display: none;">
+    <!-- List of favorite museums -->
+    <li class="museum"><a href="https://www.palazzoesposizioniroma.it/" target="_blank">Palazzo-Esposizioni</a></li>
+    <li class="museum"><a href="https://www.maxxi.art/en/?mtm_campaign=brand-rm-en&gad_source=1&gclid=Cj0KCQjw9Km3BhDjARIsAGUb4nwP92xE3WrsiNVvyGy_shssHdLYSCjgG8v1p8vf7Oc_GBAn627VwZQaAkFKEALw_wcB" target="_blank">MAXXI</a></li>
+    <li class="museum"><a href="https://www.museomacro.it/" target="_blank">Macro</a></li>
+    <li class="museum"><a href="https://www.galleriaartemodernaroma.it/" target="_blank">Galleria d'Arte Moderna</a></li>
+  </ul>
+</section>
+
+<script>
+  // Add event listener to "Favs museums" link to show/hide the museum list
+  document.getElementById('toggleList').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents default link behavior
+    var museumList = document.getElementById('museumList');
+    // Toggle the display of the museum list (show/hide)
+    if (museumList.style.display === 'none' || museumList.style.display === '') {
+      museumList.style.display = 'block'; // Show the list
+    } else {
+      museumList.style.display = 'none'; // Hide the list
+    }
+  });
+</script>
+
+<!-- FOOTER SECTION with contact links -->
+<footer id="Contact">
+  <p>LET'S GET IN TOUCH</p>
+  <!-- Email contact link -->
+  <a href="mailto:laura.hbazan@gmail.com" target="_blank"><i class="fas fa-envelope"></i>EMAIL</a>
+  <!-- Instagram contact link -->
+  <a href="https://www.instagram.com/iamanartholic?igsh=Y21ibG0zN243Yjli" target="_blank"><i class="fab fa-instagram">INSTAGRAM</i></a>
+  <!-- LinkedIn contact link -->
+  <a href="https://www.linkedin.com/in/laurahbazan/" target="_blank"><i class="fab fa-linkedin">LINKEDIN</i></a>
+</footer>
+
+</html>

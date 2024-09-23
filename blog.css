@@ -1,0 +1,210 @@
+/* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Removes default margin and padding for all elements and ensures consistent box-sizing */
+  
+  /* Custom styles for the navbar */
+  .navbar {
+    color: #d50000 !important;
+  }
+  .container-fluid {
+    background-color: #d50000 !important;
+    padding: 10px 20px !important; /* Adjust the padding */
+  }
+  
+  .navbar-brand {
+    color: yellow !important; /* Color for the brand text */
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  /* Hero section (large background image) */
+  .hero-section {
+    height: 180vh;
+    background-image: url("https://images.unsplash.com/photo-1610045944237-b06313ab8cb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjY3NTAyODF8&ixlib=rb-4.0.3&q=85");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  /* Sets a full-height background image with centered content and white text */
+  
+  /* Hero content heading style */
+  .hero-content h1 {
+    font: Lexend Deca;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  /* Large yellow heading in hero section */
+  
+  /* Hero content paragraph style */
+  .hero-content p {
+    font-size: 25px;
+    font-family: Montserrat, Regular;
+    color: yellow;
+  }
+  /* Paragraph style with yellow text in the hero section */
+  
+  /* TITLE (centered title) */
+  .titleartholic {
+    margin: 3%;
+    text-align: center;
+  }
+  /* Title styling with margin, custom color, and centered alignment */
+  
+  /* Section "ABOUT ME" */
+  .about-me {
+    padding: 50px 10px;
+    background-color: #6200ea;
+    font-family: Montserrat;
+  }
+  /* Adds padding, background color, and font for the "About Me" section */
+  
+  /* Container for images and text */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    gap: 10px;
+  }
+  /* Horizontally arranges the image gallery and text, with spacing between elements */
+  
+  /* Image Gallery (left side) */
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+  /* Vertically arranges images in the gallery with a fixed maximum width */
+  
+  /* Individual image styling */
+  .image-item img {
+    width: 70%;
+    max-width: 70%;
+    height: auto;
+    border-radius: 60px;
+    transition: transform 0.3s ease;
+  }
+  /* Sets image size, rounded corners, shadow effect, and zoom effect on hover */
+  
+  /* Image hover effect (zoom) */
+  .image-item img:hover {
+    transform: scale(1.05);
+  }
+  /* Zoom effect when hovering over images */
+  
+  /* Text on the right side of "About Me" */
+  .about-me .about-me {
+    max-width: 800px;
+    color: yellow;
+  }
+  /* Sets the maximum width of the text and yellow color */
+  
+  /* About Me heading */
+  .about-me h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  /* Styles the "About Me" heading with a large pink font */
+  
+  /* About Me paragraph */
+  .about-me p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  /* Sets paragraph font size and line spacing for better readability */
+  
+  /* MUSEUMS Section */
+  section#Museums {
+    background-color: #558b2f;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  /* Background color, padding, and centered text for the Museums section */
+  
+  /* Museums toggle link */
+  #toggleList {
+    font-size: 20px;
+    font-weight: bold;
+    color: pink;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Styles the toggle link with custom font, color, and a clickable pointer */
+  
+  /* Toggle link hover effect */
+  #toggleList:hover {
+    color: #d50000;
+  }
+  /* Keeps the color unchanged on hover */
+  
+  /* Museums list */
+  #museumList {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* Removes bullets from the list and sets margin for the museum list */
+  
+  /* Museum links */
+  .museum a {
+    color: yellow;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  /* Sets color, removes underline, and applies padding and font size for museum links */
+  
+  /* Museum links hover effect */
+  .museum a:hover {
+    color: #523ff0;
+  }
+  /* Keeps the color unchanged on hover */
+  
+  /* Footer Style */
+  footer {
+    background-color: pink;
+    color: #d50000;
+    font-size: 30px;
+    text-align: center;
+    padding: 70px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  /* Pink background, large font, centered text, and full-width footer */
+  
+  /* Footer links */
+  footer a {
+    color: #d50000;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  /* Red color, no underline, and small font size for footer links */
+  
+  /* Footer links hover effect */
+  footer a:hover {
+    color: yellow;
+  }
+  /* Changes the color of footer links to yellow on hover */
+  
+  /* Footer text */
+  footer p {
+    margin-bottom: 25px;
+  }
+  /* Adds bottom margin to the footer paragraph */
+  
